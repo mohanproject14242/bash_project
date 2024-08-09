@@ -1,0 +1,11 @@
+1.how to installl software in multiple flavors of Os?
+
+
+
+
+1.automate the backup of the databases and schedule it weekly 
+2.automate the datbase upgrade using the shell script 
+3.script to generate alert in slack/pagerduty whenever any service goed down in system 
+4.script to check list of active services in linux 
+5.scrip to check availability disk in each drive and genrate alert when it crosses 80% usage 
+6.script to clean the disk space on regular interval for logs older than 1 week 
