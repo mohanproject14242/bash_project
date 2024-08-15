@@ -5,3 +5,4 @@ packages="$@"
 for pack in $packages 
 do 
     echo "$pack"
+done
