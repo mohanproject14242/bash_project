@@ -10,4 +10,8 @@ fi
 if [[ $(id -u) -ne 0 ]]; then 
     echo "please run this command as root user" 
     exit 2
+else 
+    for packages in $@
+    do 
+        echo $packages
 fi
