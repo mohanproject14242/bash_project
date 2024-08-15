@@ -9,5 +9,10 @@ do
     else 
         echo "it is not started" 
         sudo systemctl start $pack
+        if [[ $? -eq 0 ]]; then 
+            echo "startted sucessfully" 
+        else 
+            echo "failed to start nginx"
+        fi
     fi
 done
