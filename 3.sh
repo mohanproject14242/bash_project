@@ -34,10 +34,6 @@ else
         else 
             echo "starting" 
             sudo systemctl start $packages
+        fi
     done
-
-    echo "checking wheather package in started or not" 
-    sudo systemctl status mysql
-
-    if [[ $? -eq o ]]
 fi
