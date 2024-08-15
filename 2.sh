@@ -3,4 +3,4 @@
 echo "this is the program get first 10 bigest files in file system passed via positoinal argument" 
 path="$1"
 echo $path
-du 
+du -ah $path | sort -hr  | head -n 5 >filesize.txt 
