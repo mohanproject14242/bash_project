@@ -13,6 +13,10 @@ if [[ $(id -u) -ne 0 ]]; then
 else 
     for packages in $@
     do 
-        echo $packages
+        echo "wheather check the package or not" 
+        if which $packages &> /dev/null
+        then    
+            echo "already installed in the linux" 
+        fi 
     done
 fi
