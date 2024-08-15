@@ -14,4 +14,5 @@ else
     for packages in $@
     do 
         echo $packages
+    done
 fi
