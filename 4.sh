@@ -8,6 +8,6 @@ do
         echo "$pack is started" 
     else 
         echo "it is not started" 
-        sudo systemctl statrt $pack
+        sudo systemctl start $pack
     fi
 done
