@@ -1,6 +1,6 @@
 #!/bin/bash 
 
-packages="$#" 
+packages="$@" 
 
 for pack in $packages 
 do 
