@@ -14,9 +14,16 @@ else
     for packages in $@
     do 
         echo "wheather check the package or not" 
-        if which $packages &> /dev/null
-        then    
+        if which $packages &> /dev/null ; then    
             echo "already installed in the linux" 
+        else 
+            echo "installing the $packages" 
+            yum install $packages -y 
+            if [[ $? -eq o ]]; then 
+                echo " sucessfully installed $packages" 
+            else 
+                echo "unable to install the $packages" 
+            fi
         fi 
     done
 fi
