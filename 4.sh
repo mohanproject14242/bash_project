@@ -4,5 +4,10 @@ packages="$@"
 
 for pack in $packages 
 do 
-    echo "$pack"
+    if systemctl is-active --quiet $pack ; then 
+        echo "$pack is started" 
+    else 
+        echo "it is not started" 
+        sudo systemctl statrt $pack
+    fi
 done
