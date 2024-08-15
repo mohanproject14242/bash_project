@@ -24,6 +24,20 @@ else
             else 
                 echo "unable to install the $packages" 
             fi
+            echo "checking wheather pacages is started or not" 
+           
         fi 
+        echo "checking wheather package in started or not" 
+        sudo systemctl status mysql
+        if [[ $? -eq o ]]; then 
+            echo "started successfull installes"
+        else 
+            echo "starting" 
+            sudo systemctl start $packages
     done
+
+    echo "checking wheather package in started or not" 
+    sudo systemctl status mysql
+
+    if [[ $? -eq o ]]
 fi
