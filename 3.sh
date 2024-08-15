@@ -28,7 +28,7 @@ else
            
         fi 
         echo "checking wheather package in started or not" 
-        sudo systemctl status mysql
+        sudo systemctl status $packages
         if [[ $? -eq o ]]; then 
             echo "started successfull installes"
         else 
